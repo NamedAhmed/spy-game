@@ -1,0 +1,139 @@
+.lobby {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.lobby-header {
+  text-align: center;
+}
+
+.lobby-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.lobby-code {
+  font-size: 56px;
+  letter-spacing: 8px;
+  color: #965252;
+}
+
+.lobby-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .lobby-body { grid-template-columns: 1fr; }
+}
+
+.section-title {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #2e3140;
+}
+
+.pawn {
+  width: 18px;
+  height: 24px;
+  background: #965252;
+  border-radius: 50% 50% 40% 40%;
+}
+
+.empty-pawn {
+  background: transparent;
+  border: 2px dashed #3d4150;
+}
+
+.player-row.empty { opacity: 0.4; }
+
+.host-badge {
+  font-size: 10px;
+  letter-spacing: 2px;
+  background: #965252;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #2e3140;
+  font-size: 14px;
+}
+
+.toggle {
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  background: #3d4150;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.toggle.on { background: #965252; }
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepper button {
+  background: #3d4150;
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.select {
+  background: #1e2128;
+  border: 2px solid #3d4150;
+  color: white;
+  font-family: monospace;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.start-btn {
+  width: 100%;
+  margin-top: 24px;
+  background: #965252;
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.start-btn:hover { opacity: 0.85; }

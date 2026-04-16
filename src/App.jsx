@@ -1,19 +1,16 @@
-const base_color = "#965252";
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Lobby from './pages/Lobby'
 
 function App() {
   return (
-    <div>
-      <h1>Spy Game</h1>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', padding: '20px', margin: '20px' }}>
-
-      {[1, 2, 3, 4, 5, 6].map(i => 
-        <div style={{ backgroundColor: base_color, padding: '20px', borderRadius: '5px' }}>Item {i}</div>
-      )}
-
-
-      </div>
-    </div>
-  );
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:roomCode" element={<Lobby />} />
+      </Routes>
+    </HashRouter>
+  )
 }
 
-export default App;
+export default App
