@@ -1,0 +1,54 @@
+.reveal-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px 24px;
+}
+
+.reveal-pass { color: #888; font-size: 14px; letter-spacing: 1px; }
+
+.reveal-card {
+  width: 280px;
+  height: 360px;
+  border: 2px solid #3d4150;
+  border-radius: 16px;
+  background: #1e2128;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.card-front, .card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-front span { color: #555; font-size: 14px; letter-spacing: 1px; }
+
+.role-desc { color: #888; font-size: 13px; }
+
+.word-box {
+  background: #292d34;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.word-label { font-size: 10px; letter-spacing: 2px; color: #555; text-transform: uppercase; }
+.word-value { font-size: 22px; font-weight: bold; letter-spacing: 2px; }
+.reveal-progress { color: #555; font-size: 13px; }
